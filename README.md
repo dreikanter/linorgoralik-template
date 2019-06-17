@@ -1,11 +1,11 @@
 Install dependencies:
 
-  yarn
+    yarn
 
 Build assets:
 
-  yarn build
+    yarn build
 
 Start webpack-dev-server:
 
-  yarn start
+    yarn start

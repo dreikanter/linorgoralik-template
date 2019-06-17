@@ -11,6 +11,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
+        exclude: /node_modules/,
         use: {
           loader: "babel-loader",
           options: { presets: ["@babel/env"] }
@@ -31,9 +32,6 @@ module.exports = {
               publicPath: "../",
             }
           },
-          // {
-          //   loader: "style-loader" // creates style nodes from JS strings
-          // },
           {
             loader: "css-loader", // translates CSS into CommonJS
             options: {
