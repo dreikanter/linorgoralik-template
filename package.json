@@ -5,6 +5,21 @@
   "main": "index.js",
   "repository": "https://github.com/dreikanter/linorgoralik-template.git",
   "author": "Alex Musayev <alex.musayev@gmail.com>",
-  "license": "",
-  "private": true
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --open --mode development",
+    "build": "webpack -p"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^4.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.1"
+  }
 }
