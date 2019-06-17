@@ -1,0 +1,10 @@
+{
+  "name": "linorgoralik-template",
+  "version": "1.0.0",
+  "description": "Web page template for linorgoralik.com",
+  "main": "index.js",
+  "repository": "https://github.com/dreikanter/linorgoralik-template.git",
+  "author": "Alex Musayev <alex.musayev@gmail.com>",
+  "license": "",
+  "private": true
+}
