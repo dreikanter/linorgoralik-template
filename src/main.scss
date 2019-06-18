@@ -191,8 +191,12 @@ figure {
   display: flex;
   justify-content: center;
 
-  img {
+  .image {
     max-width: 700px;
+    width: 100%;
+  }
+
+  img {
     width: 100%;
   }
 }
