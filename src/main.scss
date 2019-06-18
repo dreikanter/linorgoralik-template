@@ -10,15 +10,43 @@
 
 $font-family-serif: Georgia, Cambria, 'Times New Roman', Times, serif;
 
+//
+// Typography
+//
+
 body {
   font-family: $font-family-serif;
   line-height: 1.6;
 }
 
+blockquote {
+  font-style: italic;
+  padding-left: $spacer * 2;
+}
+
+.lead {
+  font-style: italic;
+  font-size: 110%;
+  margin-bottom: $spacer;
+
+  b,
+  strong {
+    font-weight: bold;
+  }
+}
+
+//
+// Responsive typography
+//
+
 @include media-breakpoint-down(sm) {
   body {
     font-size: 1rem;
     margin-top: $spacer * .5;
+  }
+
+  .tags {
+    margin: ($spacer * 2) 0;
   }
 }
 
@@ -26,6 +54,14 @@ body {
   body {
     font-size: 1.1rem;
     margin-top: $spacer;
+  }
+
+  figure {
+    margin-bottom: $spacer;
+  }
+
+  .tags {
+    margin: ($spacer * 2) 0;
   }
 }
 
@@ -46,6 +82,14 @@ body {
   .subtitle {
     font-size: $h3-font-size;
   }
+
+  figure {
+    margin-bottom: $spacer * 1.5;
+  }
+
+  .tags {
+    margin: ($spacer * 2) 0;
+  }
 }
 
 @include media-breakpoint-up(lg) {
@@ -55,7 +99,7 @@ body {
   }
 
   header {
-    margin-bottom: $spacer * 1.5;
+    margin-bottom: $spacer * 2;
   }
 
   h1 {
@@ -70,23 +114,19 @@ body {
   h3 {
     margin-top: 2rem;
   }
-}
 
-.lead {
-  font-style: italic;
-  font-size: 110%;
-  margin-bottom: $spacer;
+  figure {
+    margin-bottom: $spacer * 3;
+  }
 
-  b,
-  strong {
-    font-weight: bold;
+  .tags {
+    margin: ($spacer * 3) 0;
   }
 }
 
-blockquote {
-  font-style: italic;
-  padding-left: $spacer * 2;
-}
+//
+// Footer
+//
 
 footer {
   color: $gray-600;
@@ -109,6 +149,10 @@ footer {
   }
 }
 
+//
+// Tags
+//
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -116,7 +160,6 @@ footer {
   font-size: $font-size-base;
   list-style-image: none;
   list-style: none;
-  margin: $spacer * 2 0;
   padding: 0;
 
   li {
@@ -137,5 +180,23 @@ footer {
     padding: ($spacer * .25) ($spacer * .75);
     text-decoration: none;
     white-space: nowrap;
+  }
+}
+
+//
+// Figure
+//
+
+figure {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 700px;
+  width: 100%;
+
+  img {
+    width: 100%;
   }
 }
