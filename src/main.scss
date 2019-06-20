@@ -52,6 +52,20 @@ blockquote {
   .tags {
     margin: ($spacer * 2) 0;
   }
+
+  .page-preview {
+    margin-bottom: $spacer;
+    padding: $spacer $spacer ($spacer * .5);
+
+    h2 {
+      font-size: $h4-font-size;
+      margin-top: $spacer;
+    }
+
+    .image {
+      max-height: 150px;
+    }
+  }
 }
 
 @include media-breakpoint-only(sm) {
@@ -70,6 +84,20 @@ blockquote {
 
   .tags {
     margin: ($spacer * 2) 0;
+  }
+
+  .page-preview {
+    margin-bottom: $spacer;
+    padding: $spacer $spacer ($spacer * .5);
+
+    h2 {
+      font-size: $h3-font-size;
+      margin-top: $spacer;
+    }
+
+    .image {
+      max-height: 150px;
+    }
   }
 }
 
@@ -97,6 +125,19 @@ blockquote {
 
   .tags {
     margin: ($spacer * 2) 0;
+  }
+
+  .page-preview {
+    margin-bottom: $spacer * 1.5;
+    padding: ($spacer * 1.5) ($spacer * 1.5) $spacer;
+
+    h2 {
+      margin-top: $spacer * 1.5;
+    }
+
+    .image {
+      max-height: 200px;
+    }
   }
 }
 
@@ -132,7 +173,20 @@ blockquote {
   }
 
   .container {
-    max-width: 62rem;
+    max-width: 60rem;
+  }
+
+  .page-preview {
+    margin-bottom: $spacer * 2;
+    padding: ($spacer * 2) ($spacer * 2) ($spacer * 1);
+
+    h2 {
+      margin-top: $spacer * 2;
+    }
+
+    .image {
+      max-height: 300px;
+    }
   }
 }
 
@@ -157,7 +211,7 @@ footer {
   }
 
   .separator {
-    margin: $spacer * 2 0;
+    margin: ($spacer * 3) 0 ($spacer * 2);
   }
 }
 
@@ -209,6 +263,46 @@ figure {
   }
 
   img {
+    width: 100%;
+  }
+}
+
+//
+// List template
+//
+
+.page-preview {
+  border-radius: 5px;
+  border: 1px solid $gray-300;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  h2 {
+    margin-top: .4em;
+    line-height: 1.4;
+  }
+
+  figure {
+    display: block;
+    margin: 0;
+  }
+
+  .image {
+    max-width: none;
+    overflow: hidden;
+  }
+
+  img {
+    display: block;
+    height: auto;
+    margin-top: -30%;
+    overflow: hidden;
     width: 100%;
   }
 }
