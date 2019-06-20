@@ -45,6 +45,10 @@ blockquote {
     margin-top: $spacer * .5;
   }
 
+  .subtitle {
+    font-size: $h5-font-size;
+  }
+
   .tags {
     margin: ($spacer * 2) 0;
   }
@@ -58,6 +62,10 @@ blockquote {
 
   figure {
     margin-bottom: $spacer;
+  }
+
+  .subtitle {
+    font-size: $h4-font-size;
   }
 
   .tags {
