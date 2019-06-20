@@ -122,6 +122,10 @@ blockquote {
   .tags {
     margin: ($spacer * 3) 0;
   }
+
+  .container {
+    max-width: 62rem;
+  }
 }
 
 //
